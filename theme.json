@@ -158,7 +158,7 @@
 					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
 					"fontWeight": "400",
 					"fontSize": "var(--wp--custom--font-size--x-large)",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"lineHeight": "var(--wp--custom--line-height--large)"
 				}
 			},
 			"h2": {
@@ -166,7 +166,7 @@
 					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
 					"fontWeight": "400",
 					"fontSize": "var(--wp--custom--font-size--large)",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"lineHeight": "var(--wp--custom--line-height--large)"
 				}
 			},
 			"h3": {
@@ -174,7 +174,7 @@
 					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
 					"fontWeight": "400",
 					"fontSize": "var(--wp--custom--font-size--medium)",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"lineHeight": "var(--wp--custom--line-height--large)"
 				}
 			},
 			"h4": {
@@ -182,7 +182,7 @@
 					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
 					"fontWeight": "400",
 					"fontSize": "var(--wp--custom--font-size--medium)",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"lineHeight": "var(--wp--custom--line-height--large)"
 				}
 			},
 			"h5": {
@@ -191,7 +191,7 @@
 					"fontWeight": "700",
 					"fontSize": "var(--wp--custom--font-size--normal)",
 					"textTransform": "capitalize",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"lineHeight": "var(--wp--custom--line-height--large)"
 				}
 			},
 			"h6": {
@@ -200,7 +200,7 @@
 					"fontWeight": "700",
 					"fontSize": "var(--wp--custom--font-size--normal)",
 					"textTransform": "capitalize",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"lineHeight": "var(--wp--custom--line-height--large)"
 				}
 			},
 			"link": {
@@ -239,6 +239,22 @@
 		{
 			"name": "section-products",
 			"title": "Section Products"
+		},
+		{
+			"name": "content-about-taste",
+			"title": "Content About Taste"
+		},
+		{
+			"name": "content-about-us",
+			"title": "Content About Us"
+		},
+		{
+			"name": "content-products",
+			"title": "Content Products"
+		},
+		{
+			"name": "content-hometown-tax",
+			"title": "Content Hometown Tax"
 		},
 		{
 			"name": "sidebar",

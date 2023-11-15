@@ -45,7 +45,7 @@ $h6FontSize:           map-get($fontSizes, "sm"); // bold
 
 // 本文
 $textMarginTop:        0;
-$textMarginBottom:     space(2);
+$textMarginBottom:     1rem;
 
 // small (行間、字間を拡げる)
 $smallFontSize:        map-get($fontSizes, "sm");

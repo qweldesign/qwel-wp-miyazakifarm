@@ -1,14 +1,14 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"header"} /-->
+<!-- wp:template-part {"slug":"header","theme":"miyazakifarm","tagName":"header","className":"header"} /-->
 
 <!-- wp:group {"tagName":"main","className":"main","layout":{"inherit":false}} -->
-<main id="main" class="wp-block-group main"><!-- wp:group {"tagName":"header","className":"main__header"} -->
-<header class="wp-block-group main__header"><!-- wp:cover {"overlayColor":"primary-light","isDark":false,"className":"titleArea","style":{"spacing":{"padding":{"right":"0rem","left":"0rem"}}}} -->
-<div class="wp-block-cover is-light titleArea" style="padding-right:0rem;padding-left:0rem"><span aria-hidden="true" class="wp-block-cover__background has-primary-light-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"className":"titleArea__inner","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group titleArea__inner"><!-- wp:group {"align":"wide","className":"titleArea__container"} -->
-<div class="wp-block-group alignwide titleArea__container"><!-- wp:post-title {"level":1,"className":"titleArea__title","fontSize":"x-large"} /--></div>
+<main id="main" class="wp-block-group main"><!-- wp:group {"tagName":"header","className":"pageHeader"} -->
+<header class="wp-block-group pageHeader"><!-- wp:group {"className":"pageHeader__inner","layout":{"type":"default"}} -->
+<div class="wp-block-group pageHeader__inner"><!-- wp:group {"className":"pageHeader__container","layout":{"type":"default"}} -->
+<div class="wp-block-group pageHeader__container"><!-- wp:post-title {"className":"pageHeader__title"} /-->
+
+<!-- wp:post-featured-image {"className":"pageHeader__image"} /--></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></div></div>
-<!-- /wp:cover -->
+<!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -20,8 +20,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"main__body","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group main__body"><!-- wp:post-content /--></div>
+<div class="wp-block-group main__body"><!-- wp:post-content {"align":"full"} /--></div>
 <!-- /wp:group --></main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"miyazakifarm","tagName":"footer","className":"footer"} /-->
