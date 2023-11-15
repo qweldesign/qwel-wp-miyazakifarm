@@ -546,6 +546,20 @@ button, input, select, textarea {
   background-size: cover;
   transition: 1s linear opacity;
 }
+.cover__image.--num_0 {
+  position: relative;
+  background: var(--wp--preset--color--primary-dark, );
+}
+.cover__image.--num_0 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 6rem;
+  height: 6rem;
+  margin: auto;
+}
 .cover__image.--num_1 {
   background-image: url("./assets/img_00.jpg");
   background-position: 20% center;
