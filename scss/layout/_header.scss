@@ -2,14 +2,34 @@
  * Layout - Header
  */
 
-$headerHeight: 4.5rem;
+$headerHeight: 6rem;
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
   height: $headerHeight;
 
   &__inner {
     height: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     background-color: $bodyBg;
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+      background-color: $bodyBg;
+    }
+
+    @media (min-width: breakpoint("lg")) {
+      @at-root .header.--transparent & {
+        &:not(:hover) {
+          background-color: transparent;
+        }
+      }
+    }
   }
 
   &__container {

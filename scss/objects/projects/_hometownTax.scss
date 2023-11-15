@@ -1,0 +1,19 @@
+/*
+ * Project - Hometown Tax
+ */
+
+.hometown-tax {
+  @include container();
+  display: flex;
+  flex-flow: row wrap;
+  gap: space(3);
+  padding-bottom: space(5);
+
+  &__item {
+    flex: 1 1 18rem;
+
+    figcaption {
+      margin: space(2) auto;
+    }
+  }
+}

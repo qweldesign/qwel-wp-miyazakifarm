@@ -3,30 +3,30 @@
  */
 
 .postItem {
-  &__image {
-    img {
-      aspect-ratio: 1 / $imgAspectRatio;
-      object-fit: cover;
-    }
-  }
-
   &__info {
-    margin-top: space(2);
-    margin-bottom: space(1);
+    @include row(flex-start);
     font-size: $smallFontSize;
   }
 
+  &__date {
+    @include row(flex-start);
+  }
+
+  &__terms {
+    @include row(flex-start);
+
+    a {
+      margin-left: space(1);
+    }
+  }
+
   &__heading {
-    margin-top: space(2);
-    margin-bottom: space(1);
     font-size: $h3FontSize;
   }
 
-  &__excerpt {
-    margin-bottom: space(1);
-  }
-
   &.--single {
+    @include row();
+
     .postItem {
       &__image {
         @include col(4, true);
@@ -34,7 +34,7 @@
 
       &__content {
         @include col(5, true);
-        margin-bottom: space(4);
+        margin-bottom: space(2);
       }
     }
   }

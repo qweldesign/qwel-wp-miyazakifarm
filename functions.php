@@ -1,16 +1,16 @@
 <?php
 /**
- * Qwel Two functions
+ * Miyazakifarm functions
  * Author: Taigo Ito (https://qwel.design/)
  * Location: Fukui, Japan
- * @package Qwel-Two
+ * @package Miyazakifarm
  */
 
 /*
  * テーマのパス, URI
  */
-define( 'QWEL_THEME_DIR', get_template_directory() );
-define( 'QWEL_THEME_URI', get_template_directory_uri() );
+define( 'MIYAZAKIFARM_THEME_DIR', get_template_directory() );
+define( 'MIYAZAKIFARM_THEME_URI', get_template_directory_uri() );
 
 
 /*
@@ -18,10 +18,10 @@ define( 'QWEL_THEME_URI', get_template_directory_uri() );
  */
 spl_autoload_register(
 	function( $classname ) {
-		if ( strpos( $classname, 'Qwel_Theme' ) === false ) return;
+		if ( strpos( $classname, 'Miyazakifarm_Theme' ) === false ) return;
 		$classname = str_replace( '\\', '/', $classname );
-		$classname = str_replace( 'Qwel_Theme/', '', $classname );
-		$file      = QWEL_THEME_DIR . '/classes/' . $classname . '.php';
+		$classname = str_replace( 'Miyazakifarm_Theme/', '', $classname );
+		$file      = MIYAZAKIFARM_THEME_DIR . '/classes/' . $classname . '.php';
 		if ( file_exists( $file ) ) {
 			require $file;
 		}
@@ -31,10 +31,10 @@ spl_autoload_register(
 /*
  * Hookする関数群を継承して登録
  */
-class Qwel {
-	use	\Qwel_Theme\Supports,
-		\Qwel_Theme\Scripts,
-		\Qwel_Theme\Shortcodes;
+class Miyazakifarm {
+	use	\Miyazakifarm_Theme\Supports,
+		\Miyazakifarm_Theme\Scripts,
+		\Miyazakifarm_Theme\Shortcodes;
 		
 	public function __construct() {
 		// テーマサポート機能
@@ -49,6 +49,6 @@ class Qwel {
 }
 
 /**
- * Qwel start!
+ * Miyazakifarm start!
  */
-new Qwel();
+new Miyazakifarm();

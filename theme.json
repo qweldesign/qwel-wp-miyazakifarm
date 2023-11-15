@@ -35,24 +35,24 @@
 					"color": "#ffffff"
 				},
 				{
+					"slug": "primary-dark",
+					"name": "Primary Dark",
+					"color": "#4d000a"
+				},
+				{
 					"slug": "primary",
 					"name": "Primary",
-					"color": "#3399cc"
+					"color": "#7d1c29"
 				},
 				{
 					"slug": "primary-light",
 					"name": "Primary Light",
-					"color": "#85c2e0"
+					"color": "#ab3847"
 				},
 				{
 					"slug": "secondary",
 					"name": "Secondary",
-					"color": "#cc334b"
-				},
-				{
-					"slug": "secondary-light",
-					"name": "Secondary Light",
-					"color": "#e08594"
+					"color": "#dbb300"
 				}
 			]
 		},
@@ -205,7 +205,7 @@
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--medium-dark)"
+					"text": "var(--wp--preset--color--primary)"
 				}
 			}
 		}
@@ -225,20 +225,20 @@
 			"title": "Section Hero"
 		},
 		{
-			"name": "section-about",
-			"title": "Section About"
-		},
-		{
 			"name": "section-news",
 			"title": "Section News"
 		},
 		{
-			"name": "section-access",
-			"title": "Section Access"
+			"name": "section-about-taste",
+			"title": "Section About Taste"
 		},
 		{
-			"name": "section-contact",
-			"title": "Section Contact"
+			"name": "section-about-us",
+			"title": "Section About Us"
+		},
+		{
+			"name": "section-products",
+			"title": "Section Products"
 		},
 		{
 			"name": "sidebar",

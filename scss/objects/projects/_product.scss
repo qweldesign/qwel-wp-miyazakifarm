@@ -1,0 +1,122 @@
+/*
+ * Project - Procuct
+ */
+
+.product {
+  @include container();
+
+  &__heading {
+    padding-left: $gutter;
+    padding-right: $gutter;
+    font-family: "Kiwi Maru";
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
+
+  &__main {
+    @media (min-width: breakpoint("md")) {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+  }
+
+  &__largeImage {
+    @include col(4, true, "md");
+    margin: 1.5rem auto;
+
+    img {
+      border-radius: space(3);
+    }
+  }
+
+  &__content {
+    @include col(5, true, "md");
+  }
+
+  &__label {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: space(2);
+    justify-content: flex-end;
+    margin: space(3);
+
+    figure {
+      flex: 0 0 3rem;
+      margin: 0;
+    }
+  }
+
+  &__smallImages {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: space(2);
+    justify-content: flex-start;
+    margin: 1.5rem auto;
+
+    figure {
+      flex: 0 1 9rem;
+      margin: 0;
+
+      @media (min-width: breakpoint("lg")) {
+        flex: 0 1 12rem;
+      }
+    }
+
+    img {
+      border-radius: space(2);
+    }
+
+    figcaption {
+      margin: space(2) auto;
+      line-height: 1.2;
+    }
+  }
+
+  &__tags {
+    @include listUnstyled();
+    display: flex;
+    flex-flow: row wrap;
+    gap: space(2);
+    justify-content: center;
+    margin: 1.5rem auto;
+    font-size: 0.8rem;
+
+    @media (min-width: breakpoint("md")) {
+      @include smallText();
+    }
+  }
+
+  &__tag {
+    padding: space(1);
+    border: 1px solid $bodyColor;
+    border-radius: space(1);
+  }
+
+  &__desc {
+    width: min(100%, #{breakpoint("md")});
+    margin: 3rem auto 6rem;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    text-align: justify;
+
+    @media (min-width: breakpoint("md")) {
+      text-align: center;
+    }
+  }
+
+  &__more {
+    margin: space(4) auto;
+    text-align: center;
+  }
+
+  &__moreBtn {
+    width: 6rem;
+    margin-right: space(3);
+    vertical-align: middle;
+
+    a:hover & {
+      opacity: 0.7;
+    }
+  }
+}

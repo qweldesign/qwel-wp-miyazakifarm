@@ -3,12 +3,52 @@
  */
 
 .footer {
+  padding: space(4) space(2);
+  @include background("primaryDark");
+  text-align: center;
+
   &__inner {
-    padding: space(5);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
-  &__container {
-    @extend %__containerLg;
+
+  &__siteBrand {
+    width: 6rem;
+    margin: 0 space(2);
+    
+    @media (min-width: breakpoint("md")) {
+      margin: 0 space(4);
+    }
+  }
+
+  &__info {
+    margin: 0 space(2);
+    
+    @media (min-width: breakpoint("md")) {
+      margin: 0 space(4);
+    }
+
+    address {
+      margin: space(3) 0;
+      @include smallText();
+      font-style: initial;
+      text-align: left;
+    }
+  }
+
+  &__contact {
+    @include button("lightest", 12rem, 1.5rem);
+    border: 1px solid themeColor("lightest");
+    background-color: themeColor("primaryDark");
+    color: themeColor("lightest");
+    font-size: $smallFontSize;
+
+    &:hover {
+      background-color: themeColor("lightest");
+      color: themeColor("primaryDark");
+      text-decoration: none;
+      opacity: 1;
+    }
   }
 }

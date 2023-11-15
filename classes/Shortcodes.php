@@ -1,5 +1,5 @@
 <?php
-namespace Qwel_Theme;
+namespace Miyazakifarm_Theme;
 
 trait Shortcodes {
   // ショートコード登録
@@ -14,8 +14,8 @@ trait Shortcodes {
     // デフォルト値
     $atts = shortcode_atts(
       [
-        'year' => '2022',
-        'text' => 'Qwel'
+        'year' => '2023',
+        'text' => 'Miyazakifarm'
       ],
       $atts
     );

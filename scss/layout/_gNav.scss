@@ -7,20 +7,78 @@
   height: 100%;
 
   &__siteBrand {
-    flex: 0 1 9rem;
+    flex: 0 1 12rem;
     margin: 0;
     line-height: 1;
   }
 
   &__primaryMenu {
-    @media (max-width: breakpoint("md") - 0.1) {
-      display: none !important;
-    }
+    @include row(space-between);
+    @include listUnstyled();
+    flex: 0 1 45rem;
+    margin: 0;
   }
 
   &__socialMenu {
-    @media (max-width: breakpoint("md") - 0.1) {
-      display: none !important;
+    @include row();
+    @include listUnstyled();
+    flex: 0 1 6rem;
+    margin: 0;
+  }
+
+  &__menuItem {
+    margin: 0;
+    line-height: 1;
+
+    a {
+      @media (min-width: breakpoint("lg")) {
+        @at-root .header:not(:hover).--transparent & {
+          color: themeColor("lightest");
+        }
+      }
+    }
+
+    &:nth-child(4) a {
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin-left: 0.375rem;
+        background: url("./assets/okome_ol.svg") no-repeat center center;
+        vertical-align: middle;
+      }
+
+      &:hover::after {
+        background: url("./assets/okome.svg") no-repeat center center;
+      }
+
+      @media (min-width: breakpoint("lg")) {
+        @at-root .header:not(:hover).--transparent & {
+          &::after {
+            background: url("./assets/okome.svg") no-repeat center center;
+          }
+        }
+      }
+    }
+
+    &:nth-child(4) a,
+    &:nth-child(5) a {
+      padding: 0.5rem 1rem;
+      border: 1px solid $linkColor;
+      border-radius: 1.5rem;
+
+      &:hover {
+        border-color: $linkHoverColor;
+        background-color: $linkHoverColor;
+        color: themeColor("lightest");
+      }
+      
+      @media (min-width: breakpoint("lg")) {
+        @at-root .header:not(:hover).--transparent & {
+          border-color: themeColor("lightest");
+        }
+      }
     }
   }
 }
