@@ -3,6 +3,8 @@
  */
 
 .main {
+  min-height: calc(100vh - 18rem);
+  
   &__container {
     @extend %__containerLg;
   }

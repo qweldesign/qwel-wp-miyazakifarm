@@ -373,6 +373,9 @@ button, input, select, textarea {
 /**
  * Layout - Main
  */
+.main {
+  min-height: calc(100vh - 18rem);
+}
 .main__content {
   flex: 6 1 36rem;
 }
