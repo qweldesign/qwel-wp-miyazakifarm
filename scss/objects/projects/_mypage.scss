@@ -1,0 +1,15 @@
+/**
+ * Project - My Page
+ */
+
+.mypage {
+  &__heading {
+    border-bottom: 1px solid themeColor("lighter");
+  }
+
+  p {
+    margin-top: space(3);
+    margin-bottom: space(3);
+    line-height: 2;
+  }
+}

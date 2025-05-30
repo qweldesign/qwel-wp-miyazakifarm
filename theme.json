@@ -233,6 +233,10 @@
 			"title": "Section About Taste"
 		},
 		{
+			"name": "section-about-rice",
+			"title": "Section About Rice"
+		},
+		{
 			"name": "section-about-us",
 			"title": "Section About Us"
 		},
@@ -243,6 +247,10 @@
 		{
 			"name": "content-about-taste",
 			"title": "Content About Taste"
+		},
+		{
+			"name": "content-about-rice",
+			"title": "Content About Rice"
 		},
 		{
 			"name": "content-about-us",

@@ -1,26 +1,52 @@
 // Table
 
-@mixin table() {
-  width: 100%;
-  margin-top: $sectionMarginTop;
-  margin-bottom: $sectionMarginBottom;
+@mixin make-table() {
+  thead, tbody {
+    width: 100%;
+  }
 
   thead {
     border: 0; // Reset
   }
 
   tr {
-    border-bottom: 1px solid themeColor("lighter");
+    border-block-end: 1px solid themeColor("lighter");
 
     &:first-child {
-      border-top: 1px solid themeColor("lighter");
+      border-block-start: 1px solid themeColor("lighter");
     }
   }
 
   th, td {
-    padding-top: .625rem;
-    padding-bottom: .625rem;
+    padding: space();
     border: 0; // Reset
-    @include smallText();
   }
+
+  td:first-child {
+    background-color: themeColor("lighter");
+  }
+}
+
+@mixin table() {
+  width: 100%;
+
+  @media (max-width: breakpoint("sm") - 0.1px) {
+    &, thead, tbody, tr, th, td {
+      display: block;
+    }
+  }
+
+  @include make-table();
+}
+
+@mixin fluid-table($width: 72rem) {
+  width: 100%;
+  overflow-x: auto;
+
+  table {
+    width: $width;
+    margin: 0 auto;
+  }
+
+  @include make-table();
 }

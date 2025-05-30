@@ -35,6 +35,12 @@
     overflow: hidden;
   }
 
+  &-categories-list,
+  &-archives-list {
+    list-style: none;
+    padding: 0;
+  }
+
   &-query-pagination {
     &-numbers {
       .page-numbers {

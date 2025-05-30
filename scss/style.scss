@@ -1,7 +1,7 @@
 /*
 Theme Name: Miyazakifarm
 Description: This is a theme for Miyazakifarm.
-Version: 1.0
+Version: 1.1
 Requires PHP: 7.4
 Author: Taigo Ito
 Author URI: https://qwel.design/
@@ -49,6 +49,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 @import "objects/projects/hero";
 @import "objects/projects/pageHeader";
 @import "objects/projects/section";
+@import "objects/projects/mypage";
 @import "objects/projects/postItem";
 @import "objects/projects/postList";
 @import "objects/projects/product";
