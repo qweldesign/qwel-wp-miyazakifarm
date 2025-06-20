@@ -1,7 +1,7 @@
 /*
 Theme Name: Miyazakifarm
 Description: This is a theme for Miyazakifarm.
-Version: 1.1
+Version: 1.1.1
 Requires PHP: 7.4
 Author: Taigo Ito
 Author URI: https://qwel.design/
@@ -252,7 +252,7 @@ button, input, select, textarea {
 /**
  * Layout
  */
-.hometown-tax, .product, .titleArea__container, .main__container, .header__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .product__content, .product__largeImage, .postList.--list .postItem__content, .postList.--list .postItem__image, .postList.--grid .postList__item, .postItem.--single .postItem__content, .postItem.--single .postItem__image, .main__sidebar, .main__content {
+.hometown-tax, .product, .titleArea__container, .main__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .product__content, .product__largeImage, .postList.--list .postItem__content, .postList.--list .postItem__image, .postList.--grid .postList__item, .postItem.--single .postItem__content, .postItem.--single .postItem__image, .main__sidebar, .main__content {
   position: relative;
   flex: auto;
   gap: 0;
@@ -266,7 +266,7 @@ button, input, select, textarea {
   padding-right: 0.75rem;
 }
 
-.hometown-tax, .product, .titleArea__container, .main__container, .header__container {
+.hometown-tax, .product, .titleArea__container, .main__container {
   padding-left: var(--wp--custom--spacing--container-pad-wide, 0.75rem);
   padding-right: var(--wp--custom--spacing--container-pad-wide, 0.75rem);
 }
@@ -292,14 +292,16 @@ button, input, select, textarea {
 .header__inner:hover {
   background-color: var(--wp--preset--color--lightest, #ffffff);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
   .header.--transparent .header__inner:not(:hover) {
     background-color: transparent;
   }
 }
 .header__container {
-  max-width: 1200px;
+  width: 100%;
   height: 100%;
+  padding-left: var(--wp--custom--spacing--container-pad-wide, 0.75rem);
+  padding-right: var(--wp--custom--spacing--container-pad-wide, 0.75rem);
 }
 
 /**
@@ -324,7 +326,7 @@ button, input, select, textarea {
   align-items: center;
   list-style: none;
   padding-left: 0;
-  flex: 0 1 51rem;
+  flex: 0 1 54rem;
   margin: 0;
 }
 .gNav__socialMenu {
@@ -346,7 +348,7 @@ button, input, select, textarea {
     color: var(--wp--preset--color--lightest, #ffffff);
   }
 }
-.gNav__menuItem:nth-child(5) a::after {
+.gNav__menuItem:nth-child(6) a::after {
   content: "";
   display: inline-block;
   width: 1rem;
@@ -355,27 +357,27 @@ button, input, select, textarea {
   background: url("./assets/okome_ol.svg") no-repeat center center;
   vertical-align: middle;
 }
-.gNav__menuItem:nth-child(5) a:hover::after {
+.gNav__menuItem:nth-child(6) a:hover::after {
   background: url("./assets/okome.svg") no-repeat center center;
 }
 @media (min-width: 1200px) {
-  .header:not(:hover).--transparent .gNav__menuItem:nth-child(5) a::after {
+  .header:not(:hover).--transparent .gNav__menuItem:nth-child(6) a::after {
     background: url("./assets/okome.svg") no-repeat center center;
   }
 }
-.gNav__menuItem:nth-child(5) a, .gNav__menuItem:nth-child(6) a {
+.gNav__menuItem:nth-child(6) a, .gNav__menuItem:nth-child(7) a {
   padding: 0.5rem 1rem;
   border: 1px solid var(--wp--preset--color--primary, #7d1c29);
   border-radius: 1.5rem;
   font-size: 0.875rem;
 }
-.gNav__menuItem:nth-child(5) a:hover, .gNav__menuItem:nth-child(6) a:hover {
+.gNav__menuItem:nth-child(6) a:hover, .gNav__menuItem:nth-child(7) a:hover {
   border-color: var(--wp--preset--color--primary-light, #ab3847);
   background-color: var(--wp--preset--color--primary-light, #ab3847);
   color: var(--wp--preset--color--lightest, #ffffff);
 }
 @media (min-width: 1200px) {
-  .header:not(:hover).--transparent .gNav__menuItem:nth-child(5) a, .header:not(:hover).--transparent .gNav__menuItem:nth-child(6) a {
+  .header:not(:hover).--transparent .gNav__menuItem:nth-child(6) a, .header:not(:hover).--transparent .gNav__menuItem:nth-child(7) a {
     border-color: var(--wp--preset--color--lightest, #ffffff);
   }
 }
@@ -2501,6 +2503,11 @@ a:hover .product__moreBtn {
 }
 @media (max-width: 1199.9px) {
   .--visible_lg {
+    display: none !important;
+  }
+}
+@media (max-width: 1319.9px) {
+  .--visible_xl {
     display: none !important;
   }
 }

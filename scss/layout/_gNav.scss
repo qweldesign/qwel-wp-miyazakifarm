@@ -15,7 +15,7 @@
   &__primaryMenu {
     @include row(space-between);
     @include listUnstyled();
-    flex: 0 1 51rem;
+    flex: 0 1 54rem;
     margin: 0;
   }
 
@@ -38,7 +38,7 @@
       }
     }
 
-    &:nth-child(5) a {
+    &:nth-child(6) a {
       &::after {
         content: "";
         display: inline-block;
@@ -62,8 +62,8 @@
       }
     }
 
-    &:nth-child(5) a,
-    &:nth-child(6) a {
+    &:nth-child(6) a,
+    &:nth-child(7) a {
       padding: 0.5rem 1rem;
       border: 1px solid $linkColor;
       border-radius: 1.5rem;

@@ -10,4 +10,10 @@
       }
     }
   }
+
+  &_xl {
+    @media (max-width: 1320px - 0.1) {
+        display: none !important;
+      }
+  }
 }

@@ -23,7 +23,7 @@ $headerHeight: 6rem;
       background-color: $bodyBg;
     }
 
-    @media (min-width: breakpoint("lg")) {
+    @media (min-width: 1320px) {
       @at-root .header.--transparent & {
         &:not(:hover) {
           background-color: transparent;
@@ -33,7 +33,9 @@ $headerHeight: 6rem;
   }
 
   &__container {
-    @include container();
+    width: 100%;
     height: 100%;
+    padding-left: map-get($containerPad, "lg");
+    padding-right: map-get($containerPad, "lg");
   }
 }
