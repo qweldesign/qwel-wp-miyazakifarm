@@ -11,7 +11,7 @@ if (header) {
 
   // ロゴを変更
   const logo = document.querySelector('.gNav__siteBrand img');
-  if (window.innerWidth >= 1200) {
+  if (window.innerWidth >= 1440) {
     logo.setAttribute('src', '/data/uploads//logo_miyazakifarm_white.svg');
   }
 
@@ -20,7 +20,7 @@ if (header) {
     logo.setAttribute('src', '/data/uploads//logo_miyazakifarm.svg');
   });
   header.addEventListener('mouseout', () => {
-    if (window.innerWidth >= 1200 && !(window.innerHeight < window.scrollY)) {
+    if (window.innerWidth >= 1440 && !(window.innerHeight < window.scrollY)) {
       logo.setAttribute('src', '/data/uploads//logo_miyazakifarm_white.svg');
     }
   });
@@ -32,7 +32,7 @@ if (header) {
       logo.setAttribute('src', '/data/uploads//logo_miyazakifarm.svg');
     } else {
       header.classList.add('--transparent');
-      if (window.innerWidth >= 1200) {
+      if (window.innerWidth >= 1440) {
         logo.setAttribute('src', '/data/uploads//logo_miyazakifarm_white.svg');
       }
     }

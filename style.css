@@ -1,7 +1,7 @@
 /*
 Theme Name: Miyazakifarm
 Description: This is a theme for Miyazakifarm.
-Version: 1.1.1
+Version: 1.2
 Requires PHP: 7.4
 Author: Taigo Ito
 Author URI: https://qwel.design/
@@ -198,11 +198,13 @@ button, input, select, textarea {
           user-select: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
-  padding: 1rem;
-  border: 2px solid var(--wp--preset--color--lightest, #ffffff);
 }
 .wp-block-query-pagination-numbers .page-numbers:hover {
   opacity: 0.85;
+}
+.wp-block-query-pagination-numbers .page-numbers {
+  padding: 1rem;
+  border: 2px solid var(--wp--preset--color--lightest, #ffffff);
 }
 .wp-block-query-pagination-numbers .page-numbers.current {
   background-color: var(--wp--preset--color--primary-light, #ab3847);
@@ -246,7 +248,9 @@ button, input, select, textarea {
   border: 0;
 }
 .wp-block-table td:first-child {
-  background-color: var(--wp--preset--color--lighter, #d9d9d9);
+  min-width: 7.5rem;
+  background-color: #e6e6e6;
+  letter-spacing: 0.1rem;
 }
 
 /**
@@ -292,7 +296,7 @@ button, input, select, textarea {
 .header__inner:hover {
   background-color: var(--wp--preset--color--lightest, #ffffff);
 }
-@media (min-width: 1320px) {
+@media (min-width: 1440px) {
   .header.--transparent .header__inner:not(:hover) {
     background-color: transparent;
   }
@@ -326,7 +330,7 @@ button, input, select, textarea {
   align-items: center;
   list-style: none;
   padding-left: 0;
-  flex: 0 1 54rem;
+  flex: 0 1 63rem;
   margin: 0;
 }
 .gNav__socialMenu {
@@ -348,7 +352,7 @@ button, input, select, textarea {
     color: var(--wp--preset--color--lightest, #ffffff);
   }
 }
-.gNav__menuItem:nth-child(6) a::after {
+.gNav__menuItem:nth-child(7) a::after {
   content: "";
   display: inline-block;
   width: 1rem;
@@ -357,27 +361,27 @@ button, input, select, textarea {
   background: url("./assets/okome_ol.svg") no-repeat center center;
   vertical-align: middle;
 }
-.gNav__menuItem:nth-child(6) a:hover::after {
+.gNav__menuItem:nth-child(7) a:hover::after {
   background: url("./assets/okome.svg") no-repeat center center;
 }
 @media (min-width: 1200px) {
-  .header:not(:hover).--transparent .gNav__menuItem:nth-child(6) a::after {
+  .header:not(:hover).--transparent .gNav__menuItem:nth-child(7) a::after {
     background: url("./assets/okome.svg") no-repeat center center;
   }
 }
-.gNav__menuItem:nth-child(6) a, .gNav__menuItem:nth-child(7) a {
+.gNav__menuItem:nth-child(7) a, .gNav__menuItem:nth-child(8) a {
   padding: 0.5rem 1rem;
   border: 1px solid var(--wp--preset--color--primary, #7d1c29);
   border-radius: 1.5rem;
   font-size: 0.875rem;
 }
-.gNav__menuItem:nth-child(6) a:hover, .gNav__menuItem:nth-child(7) a:hover {
+.gNav__menuItem:nth-child(7) a:hover, .gNav__menuItem:nth-child(8) a:hover {
   border-color: var(--wp--preset--color--primary-light, #ab3847);
   background-color: var(--wp--preset--color--primary-light, #ab3847);
   color: var(--wp--preset--color--lightest, #ffffff);
 }
 @media (min-width: 1200px) {
-  .header:not(:hover).--transparent .gNav__menuItem:nth-child(6) a, .header:not(:hover).--transparent .gNav__menuItem:nth-child(7) a {
+  .header:not(:hover).--transparent .gNav__menuItem:nth-child(7) a, .header:not(:hover).--transparent .gNav__menuItem:nth-child(8) a {
     border-color: var(--wp--preset--color--lightest, #ffffff);
   }
 }
@@ -454,13 +458,15 @@ button, input, select, textarea {
           user-select: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+}
+.footer__contact:hover {
+  opacity: 0.85;
+}
+.footer__contact {
   border: 1px solid var(--wp--preset--color--lightest, #ffffff);
   background-color: var(--wp--preset--color--primary-dark, );
   color: var(--wp--preset--color--lightest, #ffffff);
   font-size: var(--wp--custom--font-size--small, 0.875rem);
-}
-.footer__contact:hover {
-  opacity: 0.85;
 }
 .footer__contact:hover {
   background-color: var(--wp--preset--color--lightest, #ffffff);
@@ -764,7 +770,9 @@ button, input, select, textarea {
   border: 0;
 }
 .table td:first-child {
-  background-color: var(--wp--preset--color--lighter, #d9d9d9);
+  min-width: 7.5rem;
+  background-color: #e6e6e6;
+  letter-spacing: 0.1rem;
 }
 
 /**
@@ -830,6 +838,7 @@ button, input, select, textarea {
   color: var(--wp--preset--color--dark, #808080);
   font-family: "Kiwi Maru";
   font-weight: 400;
+  font-size: 2rem;
   text-align: center;
 }
 .pageHeader__title.--products {
@@ -1028,13 +1037,13 @@ a:hover .section__moreBtn {
   justify-content: space-around;
   align-items: center;
 }
-.postList.--grid .postList__item {
-  margin-bottom: var(--wp--custom--spacing--medium, 1.5rem);
-}
 @media (min-width: 900px) {
   .postList.--grid .postList__item {
     flex: 0 1 24rem;
   }
+}
+.postList.--grid .postList__item {
+  margin-bottom: var(--wp--custom--spacing--medium, 1.5rem);
 }
 .postList.--grid .postItem__more {
   text-align: center;
@@ -1084,13 +1093,13 @@ a:hover .section__moreBtn {
     align-items: center;
   }
 }
-.product__largeImage {
-  margin: 1.5rem auto;
-}
 @media (min-width: 900px) {
   .product__largeImage {
     flex: 4 1 24rem;
   }
+}
+.product__largeImage {
+  margin: 1.5rem auto;
 }
 .product__largeImage img {
   border-radius: var(--wp--custom--spacing--medium, 1.5rem);
@@ -2506,7 +2515,7 @@ a:hover .product__moreBtn {
     display: none !important;
   }
 }
-@media (max-width: 1319.9px) {
+@media (max-width: 1439.9px) {
   .--visible_xl {
     display: none !important;
   }
