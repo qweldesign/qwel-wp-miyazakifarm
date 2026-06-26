@@ -23,7 +23,9 @@
   }
 
   td:first-child {
-    background-color: themeColor("lighter");
+    min-width: 7.5rem;
+    background-color: #e6e6e6;
+    letter-spacing: 0.1rem;
   }
 }
 

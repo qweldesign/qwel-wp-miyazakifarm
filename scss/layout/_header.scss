@@ -23,7 +23,7 @@ $headerHeight: 6rem;
       background-color: $bodyBg;
     }
 
-    @media (min-width: 1320px) {
+    @media (min-width: 1440px) {
       @at-root .header.--transparent & {
         &:not(:hover) {
           background-color: transparent;
